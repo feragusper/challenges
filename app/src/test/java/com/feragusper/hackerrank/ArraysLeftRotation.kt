@@ -12,11 +12,11 @@ fun rotLeft(a: Array<Int>, d: Int): Array<Int> {
         d
     }
 
-    for (i in shifts downTo 0) {
+    for (i in shifts until a.size) {
         result.add(a[i])
     }
 
-    for (i in 0 until a.size - shifts) {
+    for (i in 0 until shifts) {
         result.add(a[i])
     }
 
